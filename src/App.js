@@ -7,12 +7,14 @@ import Info from "./pages/Info";
 import Navbar from "./component-utils/navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import EditLineup from "./pages/EditLineup";
+import AboutMenu from './AboutMenu';
 
 function App() {
   return (
     <div>
       <Router>
         <Navbar />
+        <AboutMenu />
         <Routes>
           <Route path="/" element={<LineupSite />}>
             <Route path="/:lineupId" element={<LineupSite />} />
