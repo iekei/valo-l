@@ -7,7 +7,7 @@ import Info from "./pages/Info";
 import Navbar from "./component-utils/navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import EditLineup from "./pages/EditLineup";
-import AboutMenu from './AboutMenu';
+import AboutMenu from './AboutMenuComponent';
 
 function App() {
   return (
