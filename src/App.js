@@ -6,7 +6,7 @@ import Info from 'pages/Info';
 import DesignLineup from 'pages/DesignLineup';
 import SelectLineupPage from 'pages/SelectLineupPage';
 import EditLineup from 'pages/EditLineup';
-import AboutMenu from './AboutMenuComponent';
+import AboutMenu from 'AboutMenuComponent'; // 💡頭の「./」を外してプロジェクトの絶対ルールに合わせました
 
 function App() {
   return (
