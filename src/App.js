@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar';
-import LineupSite from './LineupSite'; 
-import Info from './Info';
-import DesignLineup from './DesignLineup';
-import SelectLineupPage from './SelectLineupPage';
-import EditLineup from './EditLineup';
+import Navbar from './pages/Navbar';
+import LineupSite from './pages/LineupSite'; 
+import Info from './pages/Info';
+import DesignLineup from './pages/DesignLineup';
+import SelectLineupPage from './pages/SelectLineupPage';
+import EditLineup from './pages/EditLineup';
 import AboutMenu from './AboutMenuComponent';
 
 function App() {
