@@ -1,13 +1,12 @@
-import React from "react";
-import LineupSite from "./pages/LineupSite";
-import DesignLineup from "./pages/DesignLineup";
-import SelectLineupPage from "./pages/SelectLineupPage";
-import Info from "./pages/Info";
-
-import Navbar from "./component-utils/navbar/Navbar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import EditLineup from "./pages/EditLineup";
-import AboutMenu from './AboutMenuComponent';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import LineupSite from './components/LineupSite'; 
+import Info from './components/Info';
+import DesignLineup from './components/DesignLineup';
+import SelectLineupPage from './components/SelectLineupPage';
+import EditLineup from './components/EditLineup';
+import AboutMenu from './AboutMenuComponent'; // 
 
 function App() {
   return (
