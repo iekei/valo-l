@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; #a
+import React, { useState, useEffect } from 'react';
 
 function AboutMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,11 +19,11 @@ function AboutMenu() {
       <style>{`
         /* --- 全体で使用するマットカラーの定義 --- */
         :root {
-          --matt-black: #121212;
-          --matt-dark-gray: #1e1e1e;
-          --matt-white: #f8f9fa;
-          --matt-light-gray: #e9ecef;
-          --accent-red: #ff4655;
+          --matt-black: rgb(18, 18, 18);
+          --matt-dark-gray: rgb(30, 30, 30);
+          --matt-white: rgb(248, 249, 250);
+          --matt-light-gray: rgb(233, 236, 239);
+          --accent-red: rgb(255, 70, 85);
         }
 
         /* --- グローバルスタイルの上書き（マットブラック / マットホワイト） --- */
@@ -41,7 +41,7 @@ function AboutMenu() {
           color: var(--matt-black) !important;
         }
 
-        /* 既存のナビバーやコンポーネント背景のマット化（必要に応じて自動適用） */
+        /* 既存のナビバーやコンポーネント背景のマット化 */
         body.theme-dark nav, body.theme-dark header, body.theme-dark .navbar {
           background-color: var(--matt-dark-gray) !important;
           border-color: rgba(255, 255, 255, 0.05) !important;
@@ -64,7 +64,7 @@ function AboutMenu() {
         .theme-switch-label {
           width: 50px;
           height: 26px;
-          background-color: #4a4a4a;
+          background-color: rgb(74, 74, 74);
           display: flex;
           border-radius: 50px;
           align-items: center;
@@ -77,7 +77,7 @@ function AboutMenu() {
         }
 
         body.theme-light .theme-switch-label {
-          background-color: #cbd5e1;
+          background-color: rgb(203, 213, 225);
         }
 
         .theme-switch-ball {
@@ -130,7 +130,6 @@ function AboutMenu() {
           background: rgba(128, 128, 128, 0.2);
           backdrop-filter: blur(10px);
           border: 1px solid rgba(128, 128, 128, 0.3);
-          color: var(--is-dark, white);
           box-shadow: none;
         }
         body.theme-dark .about-toggle-btn.open { color: var(--matt-white); }
@@ -169,7 +168,7 @@ function AboutMenu() {
         }
 
         body.theme-light .about-sidebar {
-          background: rgba(248, 249, 2fa, 0.85);
+          background: rgba(248, 249, 250, 0.85);
           backdrop-filter: blur(20px);
           border-left: 1px solid rgba(0, 0, 0, 0.05);
           color: var(--matt-black);
@@ -213,11 +212,11 @@ function AboutMenu() {
           margin: 0 0 12px 0;
         }
         body.theme-dark .menu-section h3 { 
-          color: #94a3b8; 
+          color: rgb(148, 163, 184); 
           border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         body.theme-light .menu-section h3 { 
-          color: #64748b; 
+          color: rgb(100, 116, 139); 
           border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
 
@@ -225,8 +224,8 @@ function AboutMenu() {
           font-size: 14px;
           line-height: 1.6;
         }
-        body.theme-dark .menu-section p, body.theme-dark .menu-section li { color: #cbd5e1; }
-        body.theme-light .menu-section p, body.theme-light .menu-section li { color: #334155; }
+        body.theme-dark .menu-section p, body.theme-dark .menu-section li { color: rgb(203, 213, 225); }
+        body.theme-light .menu-section p, body.theme-light .menu-section li { color: rgb(51, 65, 85); }
 
         .menu-section ul {
           padding-left: 20px;
